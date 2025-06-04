@@ -1026,16 +1026,17 @@
         });
 
         // Enquiry Form Submission
-        document.getElementById('enquiryForm').addEventListener('submit', (e) => {
-            e.preventDefault();
+        document.getElementById('contactForm').addEventListener('submit', (event) => {
+            event.preventDefault();
             const name = document.getElementById('name').value.trim();
-            const mobile = document.getElementById('mobile').value.trim();
-            const service = document.getElementById('service').value;
-            const message = document.getElementById('message').value.trim();
-            const whatsappMessage = `Hello, my name is ${name}. I am interested in ${service} in Dwaraka Nagar. My contact number is ${mobile}. Message: ${message}`;
-            const whatsappURL = `https://wa.me/919392702123?text=${encodeURIComponent(whatsappMessage)}`;
-            window.open(whatsappURL, '_blank');
-            e.target.reset();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const messageText = document.getElementById('message').value.trim();
+            const message = `Contact Form Submission:\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${messageText}`;
+            const whatsappUrl = `https://wa.me/919392702123?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+            alert('Message sent via WhatsApp!');
+            event.target.reset();
         });
 
         // Modal Enquiry Form Submission
