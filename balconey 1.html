@@ -1162,6 +1162,20 @@
         setTimeout(() => {
             openModal();
         }, 5 * 60 * 1000);
+
+
+           document.getElementById('contactForm').addEventListener('submit', (event) => {
+            event.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const messageText = document.getElementById('message').value.trim();
+            const message = `Contact Form Submission:\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${messageText}`;
+            const whatsappUrl = `https://wa.me/919392702123?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+            alert('Message sent via WhatsApp!');
+            event.target.reset();
+        });
     </script>
 </body>
 </html>
