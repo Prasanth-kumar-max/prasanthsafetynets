@@ -433,7 +433,9 @@
             </div>
 
 
-            
+            <button class="lg:hidden text-gray-700" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars text-2xl"></i>
+        </button>
         </div>
    <div id="mobileMenu" class="mobile-menu fixed inset-y-0 left-0 w-80 bg-white shadow-2xl lg:hidden z-50 ">            <div class="p-6">
                 <div class="flex justify-between items-center mb-8">
@@ -1086,9 +1088,11 @@
     <script>
         // Mobile Menu Toggle
         function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('active');
-        }
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('hidden');
+    menu.classList.toggle('-translate-x-full');
+  }
+
 
         // Navbar Scroll Effect
         window.addEventListener('scroll', () => {
