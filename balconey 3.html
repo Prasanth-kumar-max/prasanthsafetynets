@@ -12,6 +12,70 @@
             padding: 0;
             box-sizing: border-box;
         }
+        .body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.banner {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  margin: 40px auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  max-width: 500px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.banner-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #1ebe57;
+}
+
 
         :root {
             --primary: #1e40af;
@@ -21,40 +85,7 @@
             --light: #f8fafc;
         }
 
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.6;
-            scroll-behavior: smooth;
-        }
-       .banner-container {
-  position: relative;
-  max-width: 100%;
-  height: auto;
-}
 
-.banner-image {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.banner-text {
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  color: white;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
-}
-
-.banner-text h1 {
-  font-size: 2.5em;
-  margin: 0;
-}
-
-.banner-text p {
-  font-size: 1.2em;
-  margin-top: 10px;
-}
 
         .glass {
             background: rgba(255, 255, 255, 0.25);
@@ -518,8 +549,17 @@
             </div>
         </div>
     </section>
-    <div class="banner-container">
-    <img src="pithapuram.jpg" alt="Balcony Safety Net" class="banner-image">
+    <section id="locations" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div class="banner">
+    <img src="pithapuram.jpg" alt="Balcony Safety Net" class="banner-image"/>
+
+    <div class="banner-content">
+      <h1>Pithapuram Safety Nets</h1>
+      <p>Protecting kids, pets & homes with secure balcony safety net installation.</p>
+      <a href="https://wa.me/9392702123" class="cta-button" target="_blank">📞 Contact on WhatsApp</a>
+    </div>
+  </div>
+    </section>
 
     <!-- Services Section -->
     
