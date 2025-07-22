@@ -1,805 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prasanth Safety Nets In Benguluru Call : 9392702123</title>
+    <title>Premium Balcony Safety Nets - Prasanth Safety Nets</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-       /* Global Reset and Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --primary: #1e3a8a; /* Deep blue for trust and professionalism */
-    --secondary: #3b82f6; /* Vibrant blue for accents */
-    --accent: #10b981; /* Green for positive action */
-    --dark: #111827; /* Dark gray for text and backgrounds */
-    --light: #f9fafb; /* Off-white for clean backgrounds */
-    --neutral: #6b7280; /* Neutral gray for secondary text */
-    --border: #e5e7eb; /* Light gray for borders */
-}
-
-body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    line-height: 1.7;
-    color: var(--dark);
-    background: var(--light);
-    scroll-behavior: smooth;
-}
-
-/* Glass Effect */
-.glass {
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(12px);
-    border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-/* Hero Section */
-.hero-gradient {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    position: relative;
-    overflow: hidden;
-    padding: 6rem 1rem;
-}
-
-.hero-gradient::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grain)"/></svg>');
-    opacity: 0.2;
-}
-
-/* Animations */
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-15px); }
-}
-
-.floating {
-    animation: float 5s ease-in-out infinite;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-.fade-in {
-    animation: fadeIn 0.8s ease-out forwards;
-}
-
-/* Hover Effects */
-.hover-lift {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hover-lift:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-}
-
-/* Buttons */
-.btn-primary {
-    background: linear-gradient(135deg, var(--secondary), var(--primary));
-    color: white;
-    padding: 0.75rem 2rem;
-    border-radius: 9999px;
-    font-weight: 600;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
-}
-
-.btn-primary:hover {
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.btn-secondary {
-    background: linear-gradient(135deg, var(--accent), #059669);
-    color: white;
-    padding: 0.75rem 2rem;
-    border-radius: 9999px;
-    font-weight: 600;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
-}
-
-.btn-secondary:hover {
-    background: linear-gradient(135deg, #059669, var(--accent));
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Navigation */
-.navbar {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border);
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-}
-
-.navbar.scrolled {
-    background: rgba(255, 255, 255, 1);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* Service Cards */
-.service-card {
-    background: white;
-    border-radius: 16px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    position: relative;
-    border: 1px solid var(--border);
-}
-
-.service-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--secondary), var(--accent));
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-}
-
-.service-card:hover::before {
-    transform: scaleX(1);
-}
-
-.service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
-}
-
-/* Image Overlay */
-.image-overlay {
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
-}
-
-.image-overlay::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, rgba(59, 130, 246, 0.7), rgba(16, 185, 129, 0.7));
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.image-overlay:hover::after {
-    opacity: 1;
-}
-
-.image-overlay .overlay-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 10;
-}
-
-.image-overlay:hover .overlay-content {
-    opacity: 1;
-}
-
-/* Stats */
-.stat-number {
-    font-size: 2.5rem;
-    font-weight: 800;
-    background: linear-gradient(135deg, var(--secondary), var(--accent));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.dropdown {
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(-10px);
-            transition: all 0.3s ease;
-        }
-        .menu-item:hover .dropdown {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
+        :root {
+            --primary: #1c64f2; /* Vibrant blue */
+            --secondary: #60a5fa; /* Light blue */
+            --accent: #34d399; /* Bright green */
+            --dark: #111827; /* Deep gray */
+            --light: #f9fafb; /* Off-white */
         }
 
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            background-color: var(--light);
+        }
 
+        .navbar {
+            background: white;
+            border-bottom: 1px solid #e5e7eb;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
 
-       
+        .hero-section {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            color: white;
+        }
 
-/* Grid Container */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1.5rem;
-    padding: 2rem;
-}
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border: none;
+            cursor: pointer;
+        }
 
-.grid-item {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-}
+        .btn-primary:hover {
+            background-color: #1e40af;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-.grid-item:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-}
+        .btn-secondary {
+            background-color: var(--accent);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border: none;
+            cursor: pointer;
+        }
 
-.grid-item img {
-    width: 100%;
-    height: 140px;
-    object-fit: cover;
-}
+        .btn-secondary:hover {
+            background-color: #059669;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-.grid-item p {
-    padding: 1rem;
-    font-weight: 600;
-    color: var(--dark);
-}
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e5e7eb;
+        }
 
-/* WhatsApp Button */
-.whatsapp-btn {
-    position: fixed;
-    bottom: 24px;
-    right: 24px;
-    width: 60px;
-    height: 60px;
-    background: #25D366;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    z-index: 1000;
-    transition: transform 0.3s ease;
-}
+        .service-card:hover {
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+        }
 
-.whatsapp-btn:hover {
-    transform: scale(1.1);
-}
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 48px;
+            height: 48px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+        }
 
-.whatsapp-btn::before {
-    content: '';
-    position: absolute;
-    width: 72px;
-    height: 72px;
-    background: radial-gradient(circle, rgba(37, 211, 102, 0.2) 0%, rgba(37, 211, 102, 0) 70%);
-    border-radius: 50%;
-    animation: pulse 2s infinite;
-    z-index: -1;
-}
+        .whatsapp-btn:hover {
+            background-color: #22c55e;
+        }
 
-@keyframes pulse {
-    0% { transform: scale(0.9); opacity: 0.6; }
-    50% { transform: scale(1.2); opacity: 0.3; }
-    100% { transform: scale(0.9); opacity: 0.6; }
-}
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            border-radius: 10px;
+            padding: 32px;
+            margin: 32px auto;
+            max-width: 1100px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
 
-/* Modal */
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 2000;
-    align-items: center;
-    justify-content: center;
-}
+        .about-text {
+            flex: 1 1 50%;
+            padding-right: 24px;
+        }
 
-.modal.active {
-    display: flex;
-}
+        .about-text h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 16px;
+        }
 
-.modal-content {
-    background: white;
-    border-radius: 16px;
-    max-width: 640px;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-}
+        .about-text p {
+            font-size: 1rem;
+            color: #4b5563;
+            line-height: 1.7;
+        }
 
-.form-section {
-    padding: 2rem;
-}
+        .about-image {
+            flex: 1 1 40%;
+        }
 
-.form-section h2 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: var(--dark);
-    margin-bottom: 1rem;
-}
+        .about-image img {
+            width: 100%;
+            max-width: 450px;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb;
+        }
 
-.form-section .highlight {
-    color: var(--accent);
-}
+        .gallery-section {
+            background: var(--light);
+        }
 
-.form-section form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
+        .gallery-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e5e7eb;
+        }
 
-.form-section label {
-    font-weight: 600;
-    color: var(--dark);
-}
+        .gallery-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
 
-.form-section input {
-    padding: 0.75rem;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    font-size: 1rem;
-    width: 100%;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 2rem 1rem;
+            }
 
-.form-section input:focus {
-    outline: none;
-    border-color: var(--secondary);
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
-}
+            .about-text {
+                padding-right: 0;
+                text-align: center;
+            }
 
-.form-section button {
-    background: var(--secondary);
-    color: white;
-    padding: 0.75rem;
-    border-radius: 8px;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.form-section button:hover {
-    background: var(--primary);
-}
-
-.info-points {
-    list-style: disc;
-    padding-left: 1.5rem;
-    margin-top: 1rem;
-    color: var(--neutral);
-}
-
-.promo-section {
-    background: linear-gradient(135deg, var(--secondary), var(--accent));
-    padding: 1.5rem;
-    color: white;
-    position: relative;
-}
-
-.close-btn {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    color: white;
-    cursor: pointer;
-}
-
-.promo-box h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0.75rem;
-}
-
-.promo-btn {
-    background: white;
-    color: var(--dark);
-    padding: 0.5rem 1.25rem;
-    border-radius: 8px;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.promo-btn:hover {
-    background: var(--light);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero-gradient {
-        padding: 4rem 1rem;
-    }
-
-    .stat-number {
-        font-size: 2rem;
-    }
-
-    .modal-content {
-        flex-direction: column;
-        max-width: 90%;
-    }
-
-    .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    }
-
-    .btn-primary, .btn-secondary {
-        padding: 0.6rem 1.5rem;
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 640px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    .navbar {
-        padding: 1rem;
-    }
-}
+            .about-image {
+                margin-top: 24px;
+            }
+        }
     </style>
 </head>
-<body class="bg-gray-50">
+<body>
     <!-- Navigation -->
     <nav class="navbar fixed w-full top-0 z-50 py-4">
-        <div class="container mx-auto px-6 flex justify-between items-center">
-            <div class="flex items-center space-x-4">
-                <img src="logo1.url.png" alt="Prasanth Safety Nets Logo" class="w-15 h-12 ">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="logo.png" alt="Prasanth Safety Nets Logo" class="w-10 h-10 rounded-full">
                 <div>
-                    <h1 class="text-2xl font-bold text-gray-800">Prasanth Safety Nets</h1>
-                    <p class="text-sm text-gray-600">Karnataka, Bangalore</p>
+                    <h1 class="text-lg font-bold text-gray-800">Prasanth Safety Nets</h1>
+                    <p class="text-xs text-gray-600">Premium Balcony Safety Nets</p>
                 </div>
             </div>
-           <div class="hidden lg:flex items-center space-x-8">
-                <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
-                <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
-                <a href="#services" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Services</a>
-                <a href="#products" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Products</a>
-                <a href="#locations" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Locations</a>
+            <div class="hidden lg:flex items-center space-x-5">
+                <a href="#home" class="text-gray-700 hover:text-primary font-medium">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-primary font-medium">About</a>
+                <a href="#balcony-safety" class="text-gray-700 hover:text-primary font-medium">Balcony Safety Nets</a>
+                <a href="#gallery" class="text-gray-700 hover:text-primary font-medium">Gallery</a>
                 <a href="#contact" class="btn-primary">
                     <i class="fas fa-phone"></i>
                     Contact Us
                 </a>
             </div>
-
-
             <button class="lg:hidden text-gray-700" onclick="toggleMobileMenu()">
-            <i class="fas fa-bars text-2xl"></i>
-        </button>
+                <i class="fas fa-bars text-lg"></i>
+            </button>
         </div>
-   <div id="mobileMenu" class="mobile-menu fixed inset-y-0 left-0 w-80 bg-white shadow-2xl lg:hidden z-50 ">            <div class="p-6">
-                <div class="flex justify-between items-center mb-8">
-                    <h2 class="text-xl font-bold text-gray-800">Menu</h2>
+        <div id="mobileMenu" class="hidden fixed inset-y-0 left-0 w-60 bg-white shadow-lg lg:hidden z-50 transform -translate-x-full transition-transform">
+            <div class="p-5">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-lg font-bold text-gray-800">Menu</h2>
                     <button onclick="toggleMobileMenu()" class="text-gray-600">
-                        <i class="fas fa-times text-2xl"></i>
+                        <i class="fas fa-times text-lg"></i>
                     </button>
                 </div>
-               <nav class="space-y-4">
-                    <a href="#home" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">Home</a>
-                    <a href="#about" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">About</a>
-                    <a href="#services" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">Services</a>
-                    <a href="#products" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">Products</a>
-                    <a href="#locations" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">Locations</a>
-                    <a href="#contact" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">Contact</a>
+                <nav class="space-y-3">
+                    <a href="#home" class="block py-2 text-gray-700 hover:text-primary font-medium border-b">Home</a>
+                    <a href="#about" class="block py-2 text-gray-700 hover:text-primary font-medium border-b">About</a>
+                    <a href="#balcony-safety" class="block py-2 text-gray-700 hover:text-primary font-medium border-b">Balcony Safety Nets</a>
+                    <a href="#gallery" class="block py-2 text-gray-700 hover:text-primary font-medium border-b">Gallery</a>
+                    <a href="#contact" class="block py-2 text-gray-700 hover:text-primary font-medium border-b">Contact</a>
                 </nav>
-
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-gradient min-h-screen flex items-center justify-center relative">
-        <div class="container mx-auto px-6 text-center text-white relative z-10">
-            <div class="floating">
-                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                    Safety Beyond
-                    <span class="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-                        Heights
-                    </span>
-                </h1>
-                <p class="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
-                    Premium safety net solutions protecting lives and properties across India with unmatched quality and reliability
-                </p>
-                <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-                    <a href="tel:+919392702123" class="btn-secondary">
-                        <i class="fas fa-phone"></i>
-                        Call Now: +91 9392702123
-                    </a>
-                    <a href="https://wa.me/9392702123" class="btn-primary">
-                        <i class="fab fa-whatsapp"></i>
-                        WhatsApp Quote
-                    </a>
-                </div>
-            </div>
-
-            <!-- Stats Section -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
-                <div class="glass text-center p-6 rounded-2xl">
-                    <div class="stat-number">500+</div>
-                    <p class="text-lg text-gray-200">Projects Completed</p>
-                </div>
-                <div class="glass text-center p-6 rounded-2xl">
-                    <div class="stat-number">6</div>
-                    <p class="text-lg text-gray-200">Cities Covered</p>
-                </div>
-                <div class="glass text-center p-6 rounded-2xl">
-                    <div class="stat-number">100%</div>
-                    <p class="text-lg text-gray-200">Customer Satisfaction</p>
-                </div>
-                <div class="glass text-center p-6 rounded-2xl">
-                    <div class="stat-number">24/7</div>
-                    <p class="text-lg text-gray-200">Support Available</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Scroll Indicator -->
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-            <div class="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-                <div class="w-1 h-3 bg-white rounded-full mt-2 animate-bounce"></div>
+    <section id="home" class="hero-section py-24">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-5">
+                Premium Balcony Safety Nets
+            </h1>
+            <p class="text-lg md:text-xl mb-6 max-w-2xl mx-auto">
+                Ensure the safety of your family with our durable and reliable balcony safety nets
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="tel:+919392702123" class="btn-secondary">
+                    <i class="fas fa-phone"></i>
+                    Call Now: +91 9392702123
+                </a>
+                <a href="https://wa.me/9392702123" class="btn-primary">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp Quote
+                </a>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">About Prasanth Safety Nets</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-green-500 mx-auto mb-8"></div>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    A trusted provider of high-quality safety net solutions in Bengaluru and beyond
-                </p>
-            </div>
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="space-y-6">
-                    <div class="bg-gradient-to-r from-blue-50 to-green-50 p-8 rounded-2xl">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Story</h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            <strong>Prasanth Safety Nets</strong>, founded by <strong>Prasanth</strong>, is a trusted safety net provider in Bengaluru, dedicated to enhancing safety for years. We offer a wide range of products including Bird Protection Nets, Sports Nets, Bird Spikes, Children Safety Nets, Swimming Pool Safety Nets, Construction Safety Nets, and more. Our high-quality nets are designed to withstand harsh conditions and meet strict safety standards, ensuring protection for workers, residents, and passersby. Our commitment to excellence has made us a reliable name in promoting a safer community in Bengaluru and beyond.
-                        </p>
-                    </div>
-                    <a href="tel:+919392702123" class="btn-secondary">
-                        <i class="fas fa-phone"></i>
-                        Contact Now
-                    </a>
-                </div>
-                <div class="relative">
-                    <div class="image-overlay">
-                        <img src="balcony.jpg" alt="Safety Net Installation" class="w-full h-96 object-cover rounded-2xl">
-                        <div class="overlay-content">
-                            <i class="fas fa-play-circle text-6xl mb-4"></i>
-                            <p class="text-lg font-semibold">Watch Our Work</p>
-                        </div>
-                    </div>
-                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-r from-blue-500 to-green-500 rounded-full opacity-20"></div>
-                </div>
-            </div>
+    <section class="about-section">
+        <div class="about-text">
+            <h2>About Our Balcony Safety Nets</h2>
+            <p>
+                At <strong>Prasanth Safety Nets</strong>, we specialize in premium balcony safety nets designed to protect your loved ones. Our nets are crafted from high-strength, weather-resistant materials, ensuring durability and safety without compromising aesthetics.
+                <br><br>
+                Whether for apartments, villas, or commercial spaces, our solutions are tailored to fit any balcony design. With professional installation and a commitment to quality, we provide peace of mind for families and property owners.
+            </p>
+            <a href="https://wa.me/9392702123" target="_blank" class="btn-primary mt-4">
+                <i class="fab fa-whatsapp"></i>
+                Contact Now
+            </a>
+        </div>
+        <div class="about-image">
+            <img src="balcony-net-main.jpg" alt="Premium Balcony Safety Net">
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-gradient-to-b from-gray-50 to-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Our Premium Services</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-green-500 mx-auto mb-8"></div>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Comprehensive safety solutions tailored to protect what matters most to you
+    <!-- Balcony Safety Nets Section -->
+    <section id="balcony-safety" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Balcony Safety Nets</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Discover our range of high-quality balcony safety nets for ultimate protection
                 </p>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="service-card p-8 hover-lift">
-                    <div class="image-overlay mb-6">
-                        <img src="balcony.jpg" alt="Balcony Safety Nets" class="w-full h-48 object-cover">
-                        <div class="overlay-content">
-                            <i class="fas fa-home text-3xl mb-2"></i>
-                            <p class="font-semibold">Balcony Protection</p>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Balcony Safety Nets</h3>
-                    <p class="text-gray-600 mb-6">Protects children, adults, pets, and objects from falling from balconies, terraces, and windows.</p>
-                    <div class="flex justify-between items-center">
-                        <a href="balconey sub.html" class="btn-primary text-sm">
-                            <i class="fas fa-info-circle"></i>
-                            Read More
-                        </a>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="service-card p-6">
+                    <img src="standard-net.jpg" alt="Standard Balcony Nets" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Standard Balcony Nets</h3>
+                    <p class="text-gray-600 mb-4">Robust nylon nets offering reliable protection for balconies and terraces.</p>
+                    <div class="flex justify-between">
                         <a href="tel:+919392702123" class="btn-secondary text-sm">
                             <i class="fas fa-phone"></i>
                             Call Now
+                        </a>
+                        <a href="https://wa.me/9392702123" class="btn-primary text-sm">
+                            <i class="fab fa-whatsapp"></i>
+                            Get Quote
                         </a>
                     </div>
                 </div>
-                <div class="service-card p-8 hover-lift">
-                    <div class="image-overlay mb-6">
-                        <img src="pigeon safety net.jpg" alt="Pigeon Safety Nets" class="w-full h-48 object-cover">
-                        <div class="overlay-content">
-                            <i class="fas fa-dove text-3xl mb-2"></i>
-                            <p class="font-semibold">Bird Protection</p>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Pigeon Safety Nets</h3>
-                    <p class="text-gray-600 mb-6">Protects homes and buildings from pigeon infestations, ensuring cleanliness and safety.</p>
-                    <div class="flex justify-between items-center">
-                        <a href="Pigeon Safety Nets 1.html" class="btn-primary text-sm">
-                            <i class="fas fa-info-circle"></i>
-                            Read More
-                        </a>
+                <div class="service-card p-6">
+                    <img src="transparent-net.jpg" alt="Transparent Balcony Nets" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Transparent Balcony Nets</h3>
+                    <p class="text-gray-600 mb-4">Discreet nets ensuring safety while preserving your view.</p>
+                    <div class="flex justify-between">
                         <a href="tel:+919392702123" class="btn-secondary text-sm">
                             <i class="fas fa-phone"></i>
                             Call Now
+                        </a>
+                        <a href="https://wa.me/9392702123" class="btn-primary text-sm">
+                            <i class="fab fa-whatsapp"></i>
+                            Get Quote
                         </a>
                     </div>
                 </div>
-                <div class="service-card p-8 hover-lift">
-                    <div class="image-overlay mb-6">
-                        <img src="pets.jpg" alt="Pet Safety Nets" class="w-full h-48 object-cover">
-                        <div class="overlay-content">
-                            <i class="fas fa-paw text-3xl mb-2"></i>
-                            <p class="font-semibold">Pet Safety</p>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Pet Safety Nets</h3>
-                    <p class="text-gray-600 mb-6">Ensures pet safety by securing balconies and windows while maintaining visibility.</p>
-                    <div class="flex justify-between items-center">
-                        <a href="pets1.html" class="btn-primary text-sm">
-                            <i class="fas fa-info-circle"></i>
-                            Read More
-                        </a>
+                <div class="service-card p-6">
+                    <img src="custom-net.jpg" alt="Custom Balcony Nets" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Custom Balcony Nets</h3>
+                    <p class="text-gray-600 mb-4">Tailored solutions for unique balcony designs, ensuring a perfect fit.</p>
+                    <div class="flex justify-between">
                         <a href="tel:+919392702123" class="btn-secondary text-sm">
                             <i class="fas fa-phone"></i>
                             Call Now
                         </a>
-                    </div>
-                </div>
-                <div class="service-card p-8 hover-lift">
-                    <div class="image-overlay mb-6">
-                        <img src="slide3.jpg" alt="Children Safety Nets" class="w-full h-48 object-cover">
-                        <div class="overlay-content">
-                            <i class="fas fa-child text-3xl mb-2"></i>
-                            <p class="font-semibold">Child Protection</p>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Children Safety Nets</h3>
-                    <p class="text-gray-600 mb-6">Designed to child-proof windows, balconies, and staircases, preventing accidents.</p>
-                    <div class="flex justify-between items-center">
-                        <a href="children safety net 1.html" class="btn-primary text-sm">
-                            <i class="fas fa-info-circle"></i>
-                            Read More
-                        </a>
-                        <a href="tel:+919392702123" class="btn-secondary text-sm">
-                            <i class="fas fa-phone"></i>
-                            Call Now
-                        </a>
-                    </div>
-                </div>
-                <div class="service-card p-8 hover-lift">
-                    <div class="image-overlay mb-6">
-                        <img src="glass.jpg" alt="Glass Safety Nets" class="w-full h-48 object-cover">
-                        <div class="overlay-content">
-                            <i class="fas fa-shield-alt text-3xl mb-2"></i>
-                            <p class="font-semibold">Glass Safety</p>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Glass Safety Nets</h3>
-                    <p class="text-gray-600 mb-6">Provides protection for people and properties from falling objects and accidents.</p>
-                    <div class="flex justify-between items-center">
-                        <a href="Glass Safety Nets 1.html" class="btn-primary text-sm">
-                            <i class="fas fa-info-circle"></i>
-                            Read More
-                        </a>
-                        <a href="tel:+919392702123" class="btn-secondary text-sm">
-                            <i class="fas fa-phone"></i>
-                            Call Now
-                        </a>
-                    </div>
-                </div>
-                <div class="service-card p-8 hover-lift">
-                    <div class="image-overlay mb-6">
-                        <img src="building.jpg" alt="Construction Safety Nets" class="w-full h-48 object-cover">
-                        <div class="overlay-content">
-                            <i class="fas fa-hard-hat text-3xl mb-2"></i>
-                            <p class="font-semibold">Industrial Safety</p>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Construction Safety Nets</h3>
-                    <p class="text-gray-600 mb-6">Essential for construction sites to ensure worker safety and compliance with regulations.</p>
-                    <div class="flex justify-between items-center">
-                        <a href="construction safety nets 1.html" class="btn-primary text-sm">
-                            <i class="fas fa-info-circle"></i>
-                            Read More
-                        </a>
-                        <a href="tel:+919392702123" class="btn-secondary text-sm">
-                            <i class="fas fa-phone"></i>
-                            Call Now
-                        </a>
-                    </div>
-                </div>
-                <div class="service-card p-8 hover-lift">
-                    <div class="image-overlay mb-6">
-                        <img src="swimming.jpg" alt="Swimming Pool Safety Nets" class="w-full h-48 object-cover">
-                        <div class="overlay-content">
-                            <i class="fas fa-swimmer text-3xl mb-2"></i>
-                            <p class="font-semibold">Pool Safety</p>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Swimming Pool Safety Nets</h3>
-                    <p class="text-gray-600 mb-6">Prevents accidents and keeps pools safe for children and pets during the off-season.</p>
-                    <div class="flex justify-between items-center">
-                        <a href="Swimming 1.html" class="btn-primary text-sm">
-                            <i class="fas fa-info-circle"></i>
-                            Read More
-                        </a>
-                        <a href="tel:+919392702123" class="btn-secondary text-sm">
-                            <i class="fas fa-phone"></i>
-                            Call Now
-                        </a>
-                    </div>
-                </div>
-                 <div class="service-card p-8 hover-lift">
-                    <div class="image-overlay mb-6">
-                        <img src="grill.jpg" alt="Invisible grills" class="w-full h-48 object-cover">
-                        <div class="overlay-content">
-                            <i class="fas fa-dove text-3xl mb-2"></i>
-                            <p class="font-semibold">Bird Protection</p>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Invisible grills</h3>
-                    <p class="text-gray-600 mb-6">Protects homes and buildings from pigeon infestations, ensuring cleanliness and safety.</p>
-                    <div class="flex justify-between items-center">
-                        <a href="Pigeon Safety Nets 1.html" class="btn-primary text-sm">
-                            <i class="fas fa-info-circle"></i>
-                            Read More
-                        </a>
-                        <a href="tel:+919392702123" class="btn-secondary text-sm">
-                            <i class="fas fa-phone"></i>
-                            Call Now
+                        <a href="https://wa.me/9392702123" class="btn-primary text-sm">
+                            <i class="fab fa-whatsapp"></i>
+                            Get Quote
                         </a>
                     </div>
                 </div>
@@ -807,362 +323,38 @@ body {
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section id="products" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Premium Quality Products</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-green-500 mx-auto mb-8"></div>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    High-quality safety nets available in various colors
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Gallery</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Explore our installations of premium balcony safety nets
                 </p>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift text-center">
-                    <div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-100">
-                        <img src="White Color (Transparent Nets).jpg" alt="Transparent Net" class="w-full h-full object-cover">
-                    </div>
-                    <div class="text-yellow-400 text-2xl mb-4">★★★★★</div>
-                    <h3 class="text-lg font-bold text-gray-800 mb-2">White Color (Transparent Nets)</h3>
-                </div>
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift text-center">
-                    <div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-100">
-                        <img src="White Color Brided (Transparent Nets).jpg" alt="White Net" class="w-full h-full object-cover">
-                    </div>
-                    <div class="text-yellow-400 text-2xl mb-4">★★★★★</div>
-                    <h3 class="text-lg font-bold text-gray-800 mb-2">White Color Safety Nets</h3>
-                </div>
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift text-center">
-                    <div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-100">
-                        <img src="Green Color (Transparent Nets).jpg" alt="Green Net" class="w-full h-full object-cover">
-                    </div>
-                    <div class="text-yellow-400 text-2xl mb-4">★★★★★</div>
-                    <h3 class="text-lg font-bold text-gray-800 mb-2">Green Color Safety Nets</h3>
-                </div>
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift text-center">
-                    <div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-gray-100">
-                        <img src="Black Color Safety Nets.jpg" alt="Black Net" class="w-full h-full object-cover">
-                    </div>
-                    <div class="text-yellow-400 text-2xl2 mb-4">★★★★★</div>
-                    <h3 class="text-lg font-bold text-gray-800 mb-2">Black Color Safety Nets</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="py-20 bg-gradient-to-b from-gray-50 to-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Pricing</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-green-500 mx-auto mb-8"></div>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Affordable and transparent pricing for our high-quality safety nets
-                </p>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="pricing-card text-center">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">White Color (Transparent Nets)</h3>
-                    <p class="text-3xl font-bold text-blue-600 mb-4">₹20 / sqft</p>
-                    <p class="text-gray-600 mb-6">High-quality transparent nets for aesthetic appeal</p>
-                    <a href="tel:+919392702123" class="btn-secondary text-sm">
-                        <i class="fas fa-phone"></i>
-                        Get Quote
-                    </a>
-                </div>
-                <div class="pricing-card text-center">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">White Color Safety Nets</h3>
-                    <p class="text-3xl font-bold text-blue-600 mb-4">₹25 / sqft</p>
-                    <p class="text-gray-600 mb-6">Durable braided nets for enhanced safety</p>
-                    <a href="tel:+919392702123" class="btn-secondary text-sm">
-                        <i class="fas fa-phone"></i>
-                        Get Quote
-                    </a>
-                </div>
-                <div class="pricing-card text-center">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Green Color Safety Nets</h3>
-                    <p class="text-3xl font-bold text-blue-600 mb-4">₹24 / sqft</p>
-                    <p class="text-gray-600 mb-6">Vibrant green nets for visibility and protection</p>
-                    <a href="tel:+919392702123" class="btn-secondary text-sm">
-                        <i class="fas fa-phone"></i>
-                        Get Quote
-                    </a>
-                </div>
-                <div class="pricing-card text-center">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Black Color Safety Nets</h3>
-                    <p class="text-3xl font-bold text-blue-600 mb-4">₹25 / sqft</p>
-                    <p class="text-gray-600 mb-6">Sleek black nets for modern aesthetics</p>
-                    <a href="tel:+919392702123" class="btn-secondary text-sm">
-                        <i class="fas fa-phone"></i>
-                        Get Quote
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Locations Section -->
-    <section id="locations" class="py-20 bg-gradient-to-b from-gray-50 to-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Our Service Locations</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-green-500 mx-auto mb-8"></div>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    We provide safety net solutions across multiple cities in India
-                </p>
-            </div>
-            <div class="flex flex-wrap justify-center gap-4 bg-white p-8 rounded-2xl shadow-lg">
-                <div class="menu-item relative">
-                    <button class="btn-primary">Visakhapatnam</button>
-                    <div class="dropdown absolute bg-white shadow-lg rounded-lg mt-2 w-56 z-10">
-                        <a href="balconey 1.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Dwaraka Nagar</a>
-                        <a href="balconey 2.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Siripuram</a>
-                        <a href="balconey 3.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Pithapuram</a>
-                        <a href="balconey 4.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Narasimha</a>
-                        <a href="balconey 5.html" class="block px-2 py-4 hover:bg-blue-500 hover:text-white">Seethammadhara</a>
-                        <a href="balconey 6.html" class="block px-4 px-2 hover:bg-blue-500 hover:text-white">HB Colony</a>
-                        <a href="balconey 7.html" class="block px-4 py-2 py-4 hover:bg-blue-500 hover:text-white">Railway New Colony</a>
-                        <a href="balconey 8.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Shivaji Palem</a>
-                        <a href="balconey 9.html" class="block px-4 py-2 py-2 hover:bg-blue-500 hover:text-white">Venkojipalem</a>
-                        <a href="balconey 10.html" class="px-4 block py-2 hover:bg-blue-500 hover:text-white">Akkayyapalem</a>
-                        <a href="balconey 11.html" class="block px-4 px-2 hover:bg-blue-500 hover:text-white">Kancharapalem</a>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="gallery-card">
+                    <img src="gallery-net-1.jpg" alt="Balcony Safety Net Installation 1">
+                    <div class="p-4">
+                        <p class="text-gray-600 text-sm">Apartment Balcony Net</p>
                     </div>
                 </div>
-                <div class="menu-item relative">
-                    <button class="btn-primary">Vijayawada</button>
-                    <div class="dropdown absolute bg-white shadow-lg rounded-lg mt-2 w-56 z-10">
-                        <a href="balcony vij 1.html" class="block px-4 py-4 px-2 hover:bg-blue-500 hover:text-white">Tadepalli</a>
-                        <a href="balcony vij 2.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Gannavaram</a>
-                        <a href="balcony vij 3.html" class="block px-4 px-2 hover:bg-blue-500 hover:text-white">Poranki</a>
-                        <a href="balcony vij 4.html" class="block px-4 px-2 hover:bg-blue-500 hover:text-white">Gollapudi</a>
-                        <a href="balcony vij 5.html" class="block px-4 px-2 hover:bg-blue-500 hover:text-white">Kanuru</a>
-                        <a href="balcony vij 6.html" class="block px-4 px-2 hover:bg-blue-500 hover:text-white">Kankipadu</a>
-                        <a href="balcony vij 7.html" class="block px-4 px-2 py-2 hover:bg-blue-500 hover:text-white">Kanchikacherla</a>
-                        <a href="balcony vij 8.html" class="block py-4 px-2 hover:bg-blue-500 hover:text-white">Vuyyuru</a>
-                        <a href="balcony vij 9.html" class="block py-4 px-2 hover:bg-blue-500 hover:text-white">Ramavarappadu</a>
-                        <a href="balcony vij 10.html" class="block py-4 px-2 hover:bg-blue-500 hover:text-white">Penamaluru</a>
-                        <a href="balcony vij 11.html" class="block py-4 px-2 hover:bg-blue-500 hover:text-white">Bhavanipuram</a>
-                        <a href="balcony vij 12.html" class="block py-4 px-2 hover:bg-blue-500 hover:text-white">Benz Circle</a>
+                <div class="gallery-card">
+                    <img src="gallery-net-2.jpg" alt="Balcony Safety Net Installation 2">
+                    <div class="p-4">
+                        <p class="text-gray-600 text-sm">Villa Balcony Net</p>
                     </div>
                 </div>
-                <div class="menu-item relative">
-                    <button class="btn-primary">Bengaluru</button>
-                    <div class="dropdown absolute bg-white shadow-lg rounded-lg mt-2 w-56 z-10">
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Whitefield</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Koramangala</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">HSR Layout</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Indiranagar</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Malleshwaram</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Sarjapur Road</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Yelahanka</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Hebbal</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Electronic City</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Inspira Tropical Garden</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Basavang></a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Richmond Town</a>
+                <div class="gallery-card">
+                    <img src="gallery-net-3.jpg" alt="Balcony Safety Net Installation 3">
+                    <div class="p-4">
+                        <p class="text-gray-600 text-sm">Transparent Balcony Net</p>
                     </div>
                 </div>
-                <div class="menu-item relative">
-                    <button class="btn-primary">Chennai</button>
-                    <div class="dropdown absolute bg-white shadow-lg rounded-lg mt-2 w-56 z-10">
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Royapuram</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Perambur</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Anna Nagar</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">George Town</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Mylapore</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Nungambakkam</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Pallavaram</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Sholinganallur</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Pallikaranai</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Taramani</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Egmore</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Tondiarpet</a>
-                    </div>
-                </div>
-                <div class="menu-item relative">
-                    <button class="btn-primary">Kerala</button>
-                    <div class="dropdown absolute bg-white shadow-lg rounded-lg mt-2 w-56 z-10">
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Kochi</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Tripunithura</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Palarivattom</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Kadavanthra</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Kaloor</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Eroor</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Vazhakkala</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Vennala</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Kozhikode</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Thrissur</a>
-                    </div>
-                </div>
-                <div class="menu-item relative">
-                    <button class="btn-primary">Bhubaneswar</button>
-                    <div class="dropdown absolute bg-white shadow-lg rounded-lg mt-2 w-56 z-10">
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Sahid Nagar</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Kharavel Nagar</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Forest Park</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Chandrasekharpur</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Patia</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Satya Nagar</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Bapuji Nagar</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Acharya Vihar</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Samanta Vihar</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Jeevan Vihar</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Vip Estate</a>
-                        <a href="nextpage.html" class="block px-4 py-2 hover:bg-blue-500 hover:text-white">Devendra Nagar</a>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <a href="Gallery.html"><button class="btn-primary">Gallery</button></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section id="why-choose-us" class="py-20 bg-gradient-to-b from-gray-50 to-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Why Choose Us?</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-green-500 mx-auto mb-8"></div>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Our commitment to quality, safety, and timeliness sets us apart
-                </p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift text-center">
-                    <div class="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden">
-                        <img src="Quality.jpg" alt="Quality" class="w-full h-full object-cover">
-                    </div>
-                    <i class="fas fa-award text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Quality</h3>
-                    <p class="text-gray-600">We use high-quality nylon nets for strong and long-lasting safety nets.</p>
-                </div>
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift text-center">
-                    <div class="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden">
-                        <img src="safety.jpg" alt="Safety" class="w-full h-full object-cover">
-                    </div>
-                    <i class="fas fa-shield-alt text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Safety</h3>
-                    <p class="text-gray-600">Safeguarding your world with unmatched excellence.</p>
-                </div>
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift text-center">
-                    <div class="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden">
-                        <img src="Timely Work.jpg" alt="Timely Work" class="w-full h-full object-cover">
-                    </div>
-                    <i class="fas fa-clock text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Timely Work</h3>
-                    <p class="text-gray-600">Excellence delivered right on time.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How Do You Solve Pigeons Problems Section -->
-    <section id="pigeon-solutions" class="py-20 bg-gradient-to-b from-gray-50 to-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">How Do You Solve Pigeons Problems?</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-green-500 mx-auto mb-8"></div>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Effective solutions to keep pigeons at bay and maintain a clean environment
-                </p>
-            </div>
-            <div class="grid-container">
-                <div class="grid-item">
-                    <img src="balcony.jpg" alt="Balcony Safety Nets">
-                    <p>Balcony Safety Nets</p>
-                </div>
-                <div class="grid-item">
-                    <img src="AC Box Cover Nets.jpg" alt="AC Box Cover Nets">
-                    <p>AC Box Cover Nets</p>
-                </div>
-                <div class="grid-item">
-                    <img src="Coconut Safety Nets.jpg" alt="Coconut Safety Nets">
-                    <p>Coconut Safety Nets</p>
-                </div>
-                <div class="grid-item">
-                    <img src="Industrial Safety Nets.jpg" alt="Industrial Safety Nets">
-                    <p>Industrial Safety Nets</p>
-                </div>
-                <div class="grid-item">
-                    <img src="Bird Spikes.jpg" alt="Bird Spikes">
-                    <p>Bird Spikes</p>
-                </div>
-                <div class="grid-item">
-                    <img src="Terrace Cover Safety Nets.jpg" alt="Terrace Cover Safety Nets">
-                    <p>Terrace Cover Safety Nets</p>
-                </div>
-                <div class="grid-item">
-                    <img src="Mosquitos Nets.jpg" alt="Mosquitos Nets">
-                    <p>Mosquitos Nets</p>
-                </div>
-                <div class="grid-item">
-                    <img src="Cricket Nets.jpg" alt="Cricket Nets">
-                    <p>Cricket Nets</p>
-                </div>
-                <div class="grid-item">
-                    <img src="Common Area Nets.jpg" alt="Common Area Nets">
-                    <p>Common Area Nets</p>
-                </div>
-                <div class="grid-item">
-                    <img src="Duct Area Safety Nets.jpg" alt="Duct Area Safety Nets">
-                    <p>Duct Area Safety Nets</p>
-                </div>
-                <div class="grid-item">
-                    <img src="Open Area Safety Nets.jpg" alt="Open Area Safety Nets">
-                    <p>Open Area Safety Nets</p>
-                </div>
-                <div class="grid-item">
-                    <img src="Staircase Safety Nets.jpg" alt="Staircase Safety Nets">
-                    <p>Staircase Safety Nets</p>
-                </div>
-                <div class="grid-item">
-                    <img src="grill.jpg" alt="Open Area Safety Nets">
-                    <p>Invisible grills</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">What Our Clients Say</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-green-500 mx-auto mb-8"></div>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Hear from our satisfied customers about their experience with Prasanth Safety Nets
-                </p>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="testimonial-card">
-                    <p class="text-gray-600 italic mb-4">"The balcony safety nets installed by Prasanth Safety Nets are top-notch. They’re sturdy, and the installation was quick and professional. Highly recommend!"</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 rounded-full bg-gray-200 mr-4"></div>
-                        <div>
-                            <h4 class="font-bold text-gray-800">Ravi Kumar</h4>
-                            <p class="text-sm text-gray-500">Bengaluru</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <p class="text-gray-600 italic mb-4">"We had pigeon issues for years, but their pigeon safety nets solved it completely. The team was responsive and the nets look great!"</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 rounded-full bg-gray-200 mr-4"></div>
-                        <div>
-                            <h4 class="font-bold text-gray-800">Anita Sharma</h4>
-                            <p class="text-sm text-gray-500">Chennai</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <p class="text-gray-600 italic mb-4">"Excellent service and quality products. The swimming pool safety net is perfect for keeping our kids safe. Thank you, Prasanth Safety Nets!"</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 rounded-full bg-gray-200 mr-4"></div>
-                        <div>
-                            <h4 class="font-bold text-gray-800">Suresh Reddy</h4>
-                            <p class="text-sm text-gray-500">Vijayawada</p>
-                        </div>
+                <div class="gallery-card">
+                    <img src="gallery-net-4.jpg" alt="Balcony Safety Net Installation 4">
+                    <div class="p-4">
+                        <p class="text-gray-600 text-sm">Custom Balcony Net</p>
                     </div>
                 </div>
             </div>
@@ -1170,34 +362,33 @@ body {
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gradient-to-b from-white to-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Get in Touch</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-green-500 mx-auto mb-8"></div>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Contact us today for a free quote or to learn more about our safety solutions
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Get in touch for premium balcony safety net solutions
                 </p>
             </div>
-            <div class="grid lg:grid-cols-2 gap-12">
-                <div class="bg-white rounded-2xl p-8 shadow-lg">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h3>
+            <div class="grid lg:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-bold text-gray-800 mb-5">Send a Message</h3>
                     <form id="contactForm">
                         <div class="mb-4">
                             <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
-                            <input type="text" id="name" name="name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <input type="text" id="name" name="name" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
                         </div>
                         <div class="mb-4">
                             <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
-                            <input type="email" id="email" name="email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <input type="email" id="email" name="email" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
                         </div>
                         <div class="mb-4">
                             <label for="phone" class="block text-gray-700 font-medium mb-2">Phone</label>
-                            <input type="tel" id="phone" name="phone" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <input type="tel" id="phone" name="phone" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
                         </div>
                         <div class="mb-4">
                             <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
-                            <textarea id="message" name="message" rows="5" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                            <textarea id="message" name="message" rows="4" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required></textarea>
                         </div>
                         <button type="submit" class="btn-primary w-full">
                             <i class="fas fa-paper-plane"></i>
@@ -1206,163 +397,101 @@ body {
                     </form>
                 </div>
                 <div class="space-y-6">
-                    <div class="bg-white rounded-2xl p-8 shadow-lg">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Contact Information</h3>
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Contact Information</h3>
                         <div class="space-y-4">
                             <div class="flex items-center">
-                                <i class="fas fa-phone-alt text-blue-600 text-xl mr-4"></i>
-                                <a href="tel:+919392702123" class="text-gray-600 hover:text-blue-600">+91 9392702123</a>
+                                <i class="fas fa-phone-alt text-primary text-lg mr-3"></i>
+                                <a href="tel:+919392702123" class="text-gray-600 hover:text-primary">+91 9392702123</a>
                             </div>
                             <div class="flex items-center">
-                                <i class="fab fa-whatsapp text-green-600 text-xl mr-4"></i>
-                                <a href="https://wa.me/9392702123" class="text-gray-600 hover:text-green-600">WhatsApp Us</a>
+                                <i class="fab fa-whatsapp text-accent text-lg mr-3"></i>
+                                <a href="https://wa.me/9392702123" class="text-gray-600 hover:text-accent">WhatsApp Us</a>
                             </div>
                             <div class="flex items-center">
-                                <i class="fas fa-envelope text-blue-600 text-xl mr-4"></i>
-                                <a href="mailto:prasanthchokka3@gmail.com" class="text-gray-600 hover:text-blue-600">prasanthchokka3@gmail.com</a>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fas fa-map-marker-alt text-blue-600 text-xl mr-4"></i>
-                                <p class="text-gray-600">Karnataka, Bangalore-560097</p>
+                                <i class="fas fa-envelope text-primary text-lg mr-3"></i>
+                                <a href="mailto:prasanthchokka3@gmail.com" class="text-gray-600 hover:text-primary">prasanthchokka3@gmail.com</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="relative rounded-2xl overflow-hidden">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.123456789!2d77.59456291579472!3d12.971598990863794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2zMTLCuDU4JzE3LjgiTiA!5e0!3m2!1sen!2sin!4v1634567890123!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" alt="Google Map of Bangalore, Karnataka"></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- WhatsApp Floating Button -->
-        <a href="https://wa.me/9392702123" class="whatsapp-btn" target="_blank">
-            <i class="fab fa-whatsapp text-2xl"></i>
-        </a>
-
-        <!-- Enquiry Modal -->
-        <div class="modal" id="enquiryModal">
-            <div class="modal-content">
-                <div class="form-section">
-                    <h2>Send Enquiry for <span class="highlight">Prasanth Safety Nets</span></h2>
-                    <form id="enquiryForm" autocomplete="off">
-                        <label for="enquiryName" class="block text-gray-700 font-medium mb-2">Name *</label>
-                        <input type="text" id="enquiryName" name="name" placeholder="Enter your name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required autocomplete="name">
-                        <label for="enquiryMobile" class="block text-gray-700 font-medium mb-2 mt-4">Mobile Number *</label>
-                        <input type="tel" id="enquiryMobile" name="mobile" placeholder="Enter your mobile number" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required pattern="[0-9]{10}" autocomplete="tel" title="Please enter a valid 10-digit mobile number">
-                        <button type="submit" class="btn-primary w-full mt-6">
-                            <i class="fab fa-whatsapp"></i>
-                            Send Enquiry via WhatsApp
-                        </button>
-                    </form>
-                    <ul class="info-points">
-                        <li>Get the best safety net solutions at your doorstep</li>
-                        <li>Quick service, professional installation</li>
-                        <li>We’ll contact you via SMS or Call</li>
-                    </ul>
-                </div>
-                <div class="promo-section">
-                    <button class="close-btn" onclick="closeModal()" aria-label="Close modal">×</button>
-                    <div class="promo-box">
-                        <h3>Why Choose Prasanth Safety Nets?</h3>
-                        <ul>
-                            <li>✅ High-quality & durable safety nets</li>
-                            <li>✅ Installed by experienced professionals</li>
-                            <li>✅ Affordable pricing with timely service</li>
-                            <li>✅ Trusted by 500+ customers across Bangalore</li>
-                        </ul>
-                        <button class="promo-btn" onclick="window.location.href='#services'">Explore Our Services</button>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Footer -->
-        <footer class="bg-gray-800 text-white py-12">
-            <div class="container mx-auto px-6">
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div>
-                        <h3 class="text-xl font-bold mb-4">Prasanth Safety Nets</h3>
-                        <p class="text-gray-400">Prasanth Safety Nets is a leading provider of high-quality safety net solutions across India, ensuring safety for homes, construction sites, and more.</p>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
-                        <ul class="space-y-2">
-                            <li><a href="#home" class="text-gray-400 hover:text-blue-400">Home</a></li>
-                            <li><a href="#about" class="text-gray-400 hover:text-blue-400">About</a></li>
-                            <li><a href="#services" class="text-gray-400 hover:text-blue-400">Services</a></li>
-                            <li><a href="#products" class="text-gray-400 hover:text-blue-400">Products</a></li>
-                            <li><a href="#why-choose-us" class="text-gray-400 hover:text-blue-400">Why Choose Us</a></li>
-                            <li><a href="Gallery.html" class="text-gray-400 hover:text-blue-400">Gallery</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-4">Contact Us</h3>
-                        <p class="text-gray-400"><strong>Address:</strong> Karnataka, Bangalore-560097</p>
-                        <p class="text-gray-400"><strong>Phone:</strong> <a href="tel:+919392702123" class="text-blue-400 hover:underline">9392702123</a></p>
-                        <p class="text-gray-400"><strong>Email:</strong> <a href="mailto:prasanthchokka3@gmail.com" class="text-blue-400 hover:underline">prasanthchokka3@gmail.com</a></p>
-                        <div class="flex space-x-4 mt-4">
-                            <a href="https://www.facebook.com/share/1A7VhwXqC1/" target="_blank" class="text-gray-400 hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/prasanth_safety_nets?igsh=MXXExyWhqNGl1dmv0dA==" target="_blank" class="text-gray-400 hover:text-blue-400"><i class="fab fa-instagram"></i></a>
-                            <a href="https://wa.me/9392702123" target="_blank" class="text-gray-400 hover:text-blue-400"><i class="fab fa-whatsapp"></i></a>
-                        </div>
-                    </div>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/9392702123" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp text-xl"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Prasanth Safety Nets</h3>
+                    <p class="text-gray-400">Your trusted provider of premium balcony safety nets for ultimate protection.</p>
                 </div>
-                <div class="mt-12 border-t border-gray-700 pt-8 text-center">
-                    <p class="text-gray-400">&copy; 2025 Prasanth Safety Nets. All rights reserved.</p>
-                    <p class="text-gray-500 text-sm mt-2">Designed with <i class="fas fa-heart text-red-500"></i> for safety and protection</p>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-primary">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-primary">About</a></li>
+                        <li><a href="#balcony-safety" class="text-gray-400 hover:text-primary">Balcony Safety Nets</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-primary">Gallery</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-primary">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <p class="text-gray-400"><strong>Phone:</strong> <a href="tel:+919392702123" class="text-primary hover:underline">9392702123</a></p>
+                    <p class="text-gray-400"><strong>Email:</strong> <a href="mailto:prasanthchokka3@gmail.com" class="text-primary hover:underline">prasanthchokka3@gmail.com</a></p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://www.facebook.com/share/1A7VhwXqC1/" target="_blank" class="text-gray-400 hover:text-primary"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/prasanth_safety_nets?igsh=MXExYWhqNGl1dmV0dA==" target="_blank" class="text-gray-400 hover:text-primary"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/9392702123" target="_blank" class="text-gray-400 hover:text-primary"><i class="fab fa-whatsapp"></i></a>
+                    </div>
                 </div>
             </div>
-        </footer>
+            <div class="mt-8 pt-6 border-t border-gray-700 text-center">
+                <p class="text-gray-400">© 2025 Prasanth Safety Nets. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-        <!-- JavaScript -->
-        <script>
-            // Navigation Scroll Effect
-            window.addEventListener('scroll', () => {
-                const navbar = document.querySelector('.navbar');
-                if (window.scrollY > 50) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
-            });
+    <script>
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('-translate-x-full');
+        }
 
-            // Mobile Menu Toggle
-           function toggleMobileMenu() {
-    const menu = document.getElementById('mobileMenu');
-    menu.classList.toggle('hidden');
-    menu.classList.toggle('-translate-x-full');
-  }
-
-            // Enquiry Modal Functions
-            function openModal() {
-                const modal = document.getElementById('enquiryModal');
-                modal.classList.add('active');
-                modal.setAttribute('aria-hidden', 'false');
-                document.getElementById('enquiryName').focus();
-                document.body.style.overflow = 'hidden';
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-md');
+            } else {
+                navbar.classList.remove('shadow-md');
             }
+        });
 
-            function closeModal() {
-                const modal = document.getElementById('enquiryModal');
-                modal.classList.remove('active');
-                modal.setAttribute('aria-hidden', 'true');
-                document.body.style.overflow = '';
-            }
+        // Contact Form Submission
+        document.getElementById('contactForm').addEventListener('submit', (event) => {
+            event.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const messageText = document.getElementById('message').value.trim();
+            const message = `Premium Balcony Safety Nets Enquiry:\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${messageText}`;
+            const whatsappUrl = `https://wa.me/919392702123?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+            alert('Message sent via WhatsApp!');
+            event.target.reset();
+        });
 
-            // Close Modal on Outside Click
-            document.getElementById('enquiryModal').addEventListener('click', (e) => {
-                if (e.target === document.getElementById('enquiryModal')) {
-                    closeModal();
-                }
-            });
-
-            // Close Modal on Escape Key
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && document.getElementById('enquiryModal').classList.contains('active')) {
-                    closeModal();
-                }
-            });
-            // Smooth Scroll for Anchor Links
+        // Smooth Scroll for Anchor Links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -1373,63 +502,11 @@ body {
                     });
                 }
                 const mobileMenu = document.getElementById('mobileMenu');
-                if (mobileMenu.classList.contains('active')) {
+                if (!mobileMenu.classList.contains('hidden')) {
                     toggleMobileMenu();
                 }
             });
         });
-
-            // Auto-open Modal after 5 minutes
-            setTimeout(() => {
-                if (!document.getElementById('enquiryModal').classList.contains('active')) {
-                    openModal();
-                }
-            }, 1* 60 * 1000);
-
-            // Enquiry Form Submission
-            document.getElementById('enquiryForm').addEventListener('submit', (e) => {
-                e.preventDefault();
-                const name = document.getElementById('enquiryName').value.trim();
-                const mobile = document.getElementById('enquiryMobile').value.trim();
-
-                // Validate Mobile Number
-                const mobileRegex = /^[0-9]{10}$/;
-                if (!mobileRegex.test(mobile)) {
-                    alert('Please enter a valid 10-digit mobile number.');
-                    return;
-                }
-
-                // Prepare WhatsApp Message
-                const message = `Enquiry from ${name}, Mobile: ${mobile}`;
-                const whatsappUrl = `https://wa.me/+919392702123?text=${encodeURIComponent(message)}`;
-
-                // Open WhatsApp
-                window.open(whatsappUrl, '_blank');
-
-                // Reset Form and Close Modal
-                document.getElementById('enquiryForm').reset();
-                closeModal();
-            });
-
-            
-
- // Contact Form Submission
-        document.getElementById('contactForm').addEventListener('submit', (event) => {
-            event.preventDefault();
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const phone = document.getElementById('phone').value.trim();
-            const messageText = document.getElementById('message').value.trim();
-            const message = `Contact Form Submission:\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${messageText}`;
-            const whatsappUrl = `https://wa.me/919392702123?text=${encodeURIComponent(message)}`;
-            window.open(whatsappUrl, '_blank');
-            alert('Message sent via WhatsApp!');
-            event.target.reset();
-        });
-        </script>
-    </body>
+    </script>
+</body>
 </html>
-                
-
-
-
