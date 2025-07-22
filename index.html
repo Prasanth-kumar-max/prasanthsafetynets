@@ -7,8 +7,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-      /* Reset and global styles */
-    * {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -27,67 +26,70 @@
             line-height: 1.6;
             scroll-behavior: smooth;
         }
+
         .about-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(to bottom right, #e3fdf5, #ffe6fa);
-  border-radius: 16px;
-  padding: 40px;
-  margin: 40px auto;
-  max-width: 1200px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to bottom right, #e3fdf5, #ffe6fa);
+            border-radius: 16px;
+            padding: 40px;
+            margin: 40px auto;
+            max-width: 1200px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            animation: fadeIn 1s ease-in-out;
+        }
 
-.about-text {
-  flex: 1 1 500px;
-  padding-right: 30px;
-}
+        .about-text {
+            flex: 1 1 500px;
+            padding-right: 30px;
+        }
 
-.about-text h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #333;
-}
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
 
-.about-text p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #444;
-}
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+        }
 
-.contact-button {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 12px 24px;
-  background: linear-gradient(to right, #00c853, #009688);
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: background 0.3s ease;
-}
+        .contact-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 24px;
+            background: linear-gradient(to right, #00c853, #009688);
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
 
-.contact-button:hover {
-  background: linear-gradient(to right, #00bfa5, #00796b);
-}
+        .contact-button:hover {
+            background: linear-gradient(to right, #00bfa5, #00796b);
+            transform: translateY(-2px);
+        }
 
-.about-image {
-  flex: 1 1 400px;
-  text-align: center;
-}
+        .about-image {
+            flex: 1 1 400px;
+            text-align: center;
+        }
 
-.about-image img {
-  width: 100%;
-  max-width: 500px;
-  height: 300px; /* You can adjust this value as needed */
-  object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-}
+        .about-image img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+        }
 
         .glass {
             background: rgba(255, 255, 255, 0.25);
@@ -112,18 +114,19 @@
             background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grain)"/></svg>');
             opacity: 0.3;
         }
-         .dropdown {
+
+        .dropdown {
             opacity: 0;
             visibility: hidden;
             transform: translateY(-10px);
             transition: all 0.3s ease;
         }
+
         .menu-item:hover .dropdown {
             opacity: 1;
             visibility: visible;
             transform: translateY(0);
         }
-        
 
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
@@ -262,28 +265,24 @@
             opacity: 1;
         }
 
-        .testimonial-card {
+        .stats-section {
+            background: linear-gradient(to bottom right, #f8fafc, #e2e8f0);
+            padding: 40px;
+            border-radius: 16px;
+            margin: 40px auto;
+            max-width: 1200px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .stats-card {
             background: white;
-            border-radius: 20px;
+            border-radius: 12px;
             padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
             transition: all 0.3s ease;
         }
 
-        .testimonial-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-        }
-
-        .pricing-card {
-            background: white;
-            border-radius: 20px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .pricing-card:hover {
+        .stats-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
@@ -352,6 +351,17 @@
             flex-direction: column;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: slideIn 0.5s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
         .form-section {
@@ -468,9 +478,27 @@
             .modal-content {
                 flex-direction: column;
             }
+
+            .about-text {
+                padding-right: 0;
+            }
+
+            .about-image {
+                margin-top: 20px;
+            }
+        }
+
+        .mobile-menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .mobile-menu.active {
+            transform: translateX(0);
         }
     </style>
-</head>   
+</head>
+<body>
     <!-- Navigation -->
     <nav class="navbar fixed w-full top-0 z-50 py-4">
         <div class="container mx-auto px-6 flex justify-between items-center">
@@ -481,8 +509,8 @@
                     <p class="text-sm text-gray-600">Pithapuram, Visakhapatnam</p>
                 </div>
             </div>
-           <div class="hidden lg:flex items-center space-x-8">
-                <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
                 <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
                 <a href="#services" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Services</a>
                 <a href="#products" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Products</a>
@@ -492,28 +520,26 @@
                     Contact Us
                 </a>
             </div>
-
-
             <button class="lg:hidden text-gray-700" onclick="toggleMobileMenu()">
-            <i class="fas fa-bars text-2xl"></i>
-        </button>
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
         </div>
-   <div id="mobileMenu" class="mobile-menu fixed inset-y-0 left-0 w-80 bg-white shadow-2xl lg:hidden z-50 ">            <div class="p-6">
+        <div id="mobileMenu" class="mobile-menu fixed inset-y-0 left-0 w-80 bg-white shadow-2xl lg:hidden z-50 hidden">
+            <div class="p-6">
                 <div class="flex justify-between items-center mb-8">
                     <h2 class="text-xl font-bold text-gray-800">Menu</h2>
                     <button onclick="toggleMobileMenu()" class="text-gray-600">
                         <i class="fas fa-times text-2xl"></i>
                     </button>
                 </div>
-               <nav class="space-y-4">
-                    <a href="index.html" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">Home</a>
+                <nav class="space-y-4">
+                    <a href="#home" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">Home</a>
                     <a href="#about" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">About</a>
                     <a href="#services" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">Services</a>
                     <a href="#products" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">Products</a>
                     <a href="#locations" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">Locations</a>
                     <a href="#contact" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">Contact</a>
                 </nav>
-
             </div>
         </div>
     </nav>
@@ -524,9 +550,7 @@
             <div class="floating">
                 <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                     Prasanth Safety Nets Premium Solutions
-                    
                 </h1>
-                
                 <p class="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
                     Premium safety net solutions protecting homes and businesses in Visakhapatnam
                 </p>
@@ -542,35 +566,63 @@
                 </div>
             </div>
         </div>
-       
-    
         <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
             <div class="w-6 h-10 border-2 border-white rounded-full flex justify-center">
                 <div class="w-1 h-3 bg-white rounded-full mt-2 animate-bounce"></div>
             </div>
         </div>
     </section>
-   <section class="about-section">
-    <div class="about-text">
-      <h2>About</h2>
-      <p>
-        <strong> Safety Nets</strong>, led by a team of experienced professionals, is dedicated to protecting families and properties in and around Pithapuram. We specialize in balcony safety nets, bird protection nets, children safety nets, and more.
-        <br><br>
-        Our products are made with high-quality, durable materials that meet industry safety standards. Whether you live in an apartment, villa, or commercial building, we provide customized net solutions that ensure safety without compromising aesthetics.
-        <br><br>
-        Trusted by hundreds of customers in Pithapuram, we aim to make every home a safer place for kids, pets, and residents.
-      </p>
-      <a href="https://wa.me/9392702123" target="_blank" class="contact-button">📞 Contact Now</a>
-    </div>
 
-    <div class="about-image">
-      <img src="pithapuram.jpg" alt="Safety net in balcony">
-    </div>
-  </section>
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>
+                <strong>Prasanth Safety Nets</strong>, led by a team of experienced professionals, is dedicated to protecting families and properties in and around Pithapuram. We specialize in balcony safety nets, bird protection nets, children safety nets, and more.
+                <br><br>
+                Our products are made with high-quality, durable materials that meet industry safety standards. Whether you live in an apartment, villa, or commercial building, we provide customized net solutions that ensure safety without compromising aesthetics.
+                <br><br>
+                Trusted by hundreds of customers in Pithapuram, we aim to make every home a safer place for kids, pets, and residents.
+            </p>
+            <a href="https://wa.me/9392702123" target="_blank" class="contact-button">📞 Contact Now</a>
+        </div>
+        <div class="about-image">
+            <img src="pithapuram.jpg" alt="Safety net in balcony">
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="stats" class="stats-section">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Our Achievements</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-green-500 mx-auto mb-8"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Proudly serving our community with top-notch safety solutions
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="stats-card">
+                    <i class="fas fa-users text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-3xl font-bold text-gray-800 mb-2">500+</h3>
+                    <p class="text-gray-600">Satisfied Customers</p>
+                </div>
+                <div class="stats-card">
+                    <i class="fas fa-project-diagram text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-3xl font-bold text-gray-800 mb-2">750+</h3>
+                    <p class="text-gray-600">Projects Completed</p>
+                </div>
+                <div class="stats-card">
+                    <i class="fas fa-city text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-3xl font-bold text-gray-800 mb-2">6</h3>
+                    <p class="text-gray-600">Cities Served</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Services Section -->
-    
-  <section id="services" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section id="services" class="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Our Premium Services</h2>
@@ -848,7 +900,6 @@
         </div>
     </section>
 
-
     <!-- Why Choose Us Section -->
     <section id="why-choose-us" class="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div class="container mx-auto px-6">
@@ -901,16 +952,16 @@
             <div class="bg-white rounded-2xl p-8 shadow-lg max-w-md mx-auto">
                 <form id="enquiryForm">
                     <div class="mb-4">
-                        <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        <label for="enquiryName" class="block text-gray-700 font-medium mb-2">Name</label>
+                        <input type="text" id="enquiryName" name="name" placeholder="Enter your name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                     </div>
                     <div class="mb-4">
-                        <label for="mobile" class="block text-gray-700 font-medium mb-2">Mobile</label>
-                        <input type="tel" id="mobile" name="mobile" placeholder="Enter your number" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required pattern="[0-9]{10}">
+                        <label for="enquiryMobile" class="block text-gray-700 font-medium mb-2">Mobile</label>
+                        <input type="tel" id="enquiryMobile" name="mobile" placeholder="Enter your number" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required pattern="[0-9]{10}">
                     </div>
                     <div class="mb-4">
-                        <label for="service" class="block text-gray-700 font-medium mb-2">Choose Service</label>
-                        <select id="service" name="service" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        <label for="enquiryService" class="block text-gray-700 font-medium mb-2">Choose Service</label>
+                        <select id="enquiryService" name="service" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                             <option value="" disabled selected>Select a service</option>
                             <option value="Balcony Safety Nets">Balcony Safety Nets</option>
                             <option value="Pigeon Safety Nets">Pigeon Safety Nets</option>
@@ -922,8 +973,8 @@
                         </select>
                     </div>
                     <div class="mb-4">
-                        <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Your message" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        <label for="enquiryMessage" class="block text-gray-700 font-medium mb-2">Message</label>
+                        <textarea id="enquiryMessage" name="message" rows="5" placeholder="Your message" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
                     </div>
                     <button type="submit" class="btn-primary w-full">
                         <i class="fas fa-paper-plane"></i>
@@ -1037,20 +1088,20 @@
                     <h3 class="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h3>
                     <form id="contactForm">
                         <div class="mb-4">
-                            <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
-                            <input type="text" id="name" name="name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <label for="contactName" class="block text-gray-700 font-medium mb-2">Name</label>
+                            <input type="text" id="contactName" name="name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                         </div>
                         <div class="mb-4">
-                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
-                            <input type="email" id="email" name="email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <label for="contactEmail" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="contactEmail" name="email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                         </div>
                         <div class="mb-4">
-                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone</label>
-                            <input type="tel" id="phone" name="phone" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <label for="contactPhone" class="block text-gray-700 font-medium mb-2">Phone</label>
+                            <input type="tel" id="contactPhone" name="phone" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                         </div>
                         <div class="mb-4">
-                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
-                            <textarea id="message" name="message" rows="5" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                            <label for="contactMessage" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="contactMessage" name="message" rows="5" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
                         </div>
                         <button type="submit" class="btn-primary w-full">
                             <i class="fas fa-paper-plane"></i>
@@ -1082,6 +1133,7 @@
                     </div>
                     <div class="relative rounded-2xl overflow-hidden">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3802.345678901234!2d82.2642!3d17.1167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37e6d2f7e3a9b7%3A0x6e7b27e9e4f3c3e1!2sPithapuram%2C+Andhra+Pradesh%2C+India!5e0!3m2!1sen!2sin!4v1737190901234!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1135,7 +1187,7 @@
                     <p class="text-gray-400">Leading provider of safety net solutions in Visakhapatnam, ensuring safety for homes and businesses.</p>
                 </div>
                 <div>
-                   <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
                     <ul class="space-y-2">
                         <li><a href="#home" class="text-gray-400 hover:text-blue-400">Home</a></li>
                         <li><a href="#about" class="text-gray-400 hover:text-blue-400">About</a></li>
@@ -1166,11 +1218,10 @@
     <script>
         // Mobile Menu Toggle
         function toggleMobileMenu() {
-    const menu = document.getElementById('mobileMenu');
-    menu.classList.toggle('hidden');
-    menu.classList.toggle('-translate-x-full');
-  }
-
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('active');
+        }
 
         // Navbar Scroll Effect
         window.addEventListener('scroll', () => {
@@ -1182,34 +1233,30 @@
             }
         });
 
-        // Contact Form Submission
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for your message! We will get back to you soon.');
-            e.target.reset();
-        });
+        // Form Submission Handling
+        function handleFormSubmission(formId, isModal = false) {
+            const form = document.getElementById(formId);
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                
+                const formData = new FormData(form);
+                const message = isModal ? 
+                    `Enquiry Form Submission:\nName: ${formData.get('name')}\nMobile: ${formData.get('mobile')}` :
+                    `Contact Form Submission:\nName: ${formData.get('name')}\nEmail: ${formData.get('email')}\nPhone: ${formData.get('phone')}\nMessage: ${formData.get('message')}`;
+                
+                const whatsappUrl = `https://wa.me/919392702123?text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+                
+                alert(isModal ? 'Thank you for your enquiry! We will contact you soon.' : 'Message sent via WhatsApp!');
+                form.reset();
+                if (isModal) closeModal();
+            });
+        }
 
-        // Enquiry Form Submission
-        document.getElementById('contactForm').addEventListener('submit', (event) => {
-            event.preventDefault();
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const phone = document.getElementById('phone').value.trim();
-            const messageText = document.getElementById('message').value.trim();
-            const message = `Contact Form Submission:\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${messageText}`;
-            const whatsappUrl = `https://wa.me/919392702123?text=${encodeURIComponent(message)}`;
-            window.open(whatsappUrl, '_blank');
-            alert('Message sent via WhatsApp!');
-            event.target.reset();
-        });
-
-        // Modal Enquiry Form Submission
-        document.getElementById('modalEnquiryForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for your enquiry! We will contact you soon.');
-            closeModal();
-            e.target.reset();
-        });
+        // Initialize form handlers
+        handleFormSubmission('contactForm');
+        handleFormSubmission('enquiryForm');
+        handleFormSubmission('modalEnquiryForm', true);
 
         // Smooth Scroll for Anchor Links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1237,23 +1284,16 @@
             document.getElementById('enquiryModal').classList.remove('active');
         }
 
-        // Show modal after 5 minutes
+        // Show modal after 3 minutes
         setTimeout(() => {
             openModal();
         }, 3 * 60 * 1000);
 
-
-           document.getElementById('contactForm').addEventListener('submit', (event) => {
-            event.preventDefault();
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const phone = document.getElementById('phone').value.trim();
-            const messageText = document.getElementById('message').value.trim();
-            const message = `Contact Form Submission:\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${messageText}`;
-            const whatsappUrl = `https://wa.me/919392702123?text=${encodeURIComponent(message)}`;
-            window.open(whatsappUrl, '_blank');
-            alert('Message sent via WhatsApp!');
-            event.target.reset();
+        // Close modal on outside click
+        document.getElementById('enquiryModal').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('enquiryModal')) {
+                closeModal();
+            }
         });
     </script>
 </body>
