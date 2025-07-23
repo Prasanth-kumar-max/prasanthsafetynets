@@ -219,6 +219,26 @@
             transform: translateX(0);
         }
 
+        .connect-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .connect-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .connect-links a:hover {
+            color: var(--primary);
+        }
+
         @media (max-width: 768px) {
             .hero-section {
                 padding: 3rem 1rem;
@@ -239,6 +259,10 @@
 
             .about-text p {
                 font-size: 1rem;
+            }
+
+            .connect-links {
+                justify-content: center;
             }
         }
     </style>
@@ -315,7 +339,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="about-section">
+    <section id="about" class="about-section">
         <div class="about-text">
             <h2>About Prasanth Safety Nets</h2>
             <p>
@@ -323,10 +347,29 @@
                 <br><br>
                 With professional installation and a focus on customer satisfaction, we cater to apartments, villas, and commercial spaces. Trust us to deliver tailored solutions that prioritize safety without compromising on style.
             </p>
-            <a href="https://wa.me/9392702123" target="_blank" class="btn-primary mt-6">
-                <i class="fab fa-whatsapp"></i>
-                Contact Now
-            </a>
+            <h3 class="text-xl font-bold text-gray-800 mt-6 mb-4">Connect with Us</h3>
+            <div class="connect-links">
+                <a href="tel:+919392702123">
+                    <i class="fas fa-phone-alt text-blue-600 text-lg"></i>
+                    +91 9392702123
+                </a>
+                <a href="https://wa.me/9392702123" target="_blank">
+                    <i class="fab fa-whatsapp text-green-600 text-lg"></i>
+                    WhatsApp Us
+                </a>
+                <a href="mailto:prasanthchokka3@gmail.com">
+                    <i class="fas fa-envelope text-blue-600 text-lg"></i>
+                    prasanthchokka3@gmail.com
+                </a>
+                <a href="https://www.facebook.com/share/1A7VhwXqC1/" target="_blank">
+                    <i class="fab fa-facebook-f text-blue-600 text-lg"></i>
+                    Facebook
+                </a>
+                <a href="https://www.instagram.com/prasanth_safety_nets?igsh=MXExYWhqNGl1dmV0dA==" target="_blank">
+                    <i class="fab fa-instagram text-pink-600 text-lg"></i>
+                    Instagram
+                </a>
+            </div>
         </div>
         <div class="about-image">
             <img src="balcony.jpg" alt="Premium Balcony Safety Net">
@@ -490,7 +533,6 @@
                             </div>
                         </div>
                     </div>
-                   
                 </div>
             </div>
         </div>
