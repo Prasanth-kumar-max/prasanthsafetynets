@@ -146,7 +146,7 @@
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
-            background: linear-gradient(to bottom right, #e3fdf5, #ffe ileri6fa);
+            background: linear-gradient(to bottom right, #e3fdf5, #ffe6fa);
             border-radius: 16px;
             padding: 40px;
             margin: 40px auto;
@@ -219,6 +219,26 @@
             transform: translateX(0);
         }
 
+        .connect-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .connect-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .connect-links a:hover {
+            color: var(--primary);
+        }
+
         @media (max-width: 768px) {
             .hero-section {
                 padding: 3rem 1rem;
@@ -239,6 +259,10 @@
 
             .about-text p {
                 font-size: 1rem;
+            }
+
+            .connect-links {
+                justify-content: center;
             }
         }
     </style>
@@ -323,10 +347,29 @@
                 <br><br>
                 With professional installation and a focus on customer satisfaction, we provide customized solutions for homes, apartments, and pet-friendly spaces. Trust us to deliver safety and peace of mind for your pets.
             </p>
-            <a href="#contact" class="btn-primary mt-6">
-                <i class="fas fa-paw"></i>
-                Contact Now
-            </a>
+            <h3 class="text-xl font-bold text-gray-800 mt-6 mb-4">Connect with Us</h3>
+            <div class="connect-links">
+                <a href="tel:+919123456789">
+                    <i class="fas fa-phone-alt text-blue-600 text-lg"></i>
+                    +91 9123456789
+                </a>
+                <a href="https://wa.me/9123456789" target="_blank">
+                    <i class="fab fa-whatsapp text-green-600 text-lg"></i>
+                    WhatsApp Us
+                </a>
+                <a href="mailto:safepetsolutions@gmail.com">
+                    <i class="fas fa-envelope text-blue-600 text-lg"></i>
+                    safepetsolutions@gmail.com
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook-f text-blue-600 text-lg"></i>
+                    Facebook
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fab fa-instagram text-pink-600 text-lg"></i>
+                    Instagram
+                </a>
+            </div>
         </div>
         <div class="about-image">
             <img src="pet-net.jpg" alt="Premium Pet Safety Net">
