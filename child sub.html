@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Children Safety Nets - Prasanth Safety Nets</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1e40af; /* Deep blue */
+            --secondary: #3b82f6; /* Lighter blue */
+            --accent: #10b981; /* Green */
+            --dark: #1f2937; /* Dark gray */
+            --light: #f8fafc; /* Light gray */
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            background-color: var(--light);
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grain)"/></svg>');
+            opacity: 0.2;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, var(--accent), #059669);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 56px;
+            height: 56px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-btn::before {
+            content: '';
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            background: radial-gradient(circle, rgba(37, 211, 102, 0.3) 0%, rgba(37, 211, 102, 0) 70%);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.8); opacity: 0.7; }
+            50% { transform: scale(1.2); opacity: 0.3; }
+            100% { transform: scale(0.8); opacity: 0.7; }
+        }
+
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to bottom right, #e3fdf5, #ffe6fa);
+            border-radius: 16px;
+            padding: 40px;
+            margin: 40px auto;
+            max-width: 1200px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-text {
+            flex: 1 1 50%;
+            padding-right: 32px;
+        }
+
+        .about-text h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            color: #374151;
+            line-height: 1.8;
+        }
+
+        .about-image {
+            flex: 1 1 40%;
+            text-align: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-section {
+            background: var(--light);
+        }
+
+        .gallery-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px 12px 0 0;
+        }
+
+        .mobile-menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+
+        .connect-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .connect-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .connect-links a:hover {
+            color: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 3rem 1rem;
+            }
+
+            .about-text {
+                padding-right: 0;
+                text-align: center;
+            }
+
+            .about-image {
+                margin-top: 24px;
+            }
+
+            .about-text h2 {
+                font-size: 1.5rem;
+            }
+
+            .about-text p {
+                font-size: 1rem;
+            }
+
+            .connect-links {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar fixed w-full top-0 z-50 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="logo1.url.png" alt="Prasanth Safety Nets Logo" class="w-13 h-14">
+                <div>
+                    <h1 class="text-xl font-bold text-gray-800">Prasanth Safety Nets</h1>
+                    <p class="text-sm text-gray-600">Premium Children Safety Nets</p>
+                </div>
+            </div>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
+                <a href="#children-safety" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Children Safety Nets</a>
+                <a href="#gallery" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Gallery</a>
+                <a href="#contact" class="btn-primary">
+                    <i class="fas fa-phone"></i>
+                    Contact Us
+                </a>
+            </div>
+            <button class="lg:hidden text-gray-700" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <div id="mobileMenu" class="mobile-menu fixed inset-y-0 left-0 w-80 bg-white shadow-2xl lg:hidden z-50 hidden">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-8">
+                    <h2 class="text-xl font-bold text-gray-800">Menu</h2>
+                    <button onclick="toggleMobileMenu()" class="text-gray-600">
+                        <i class="fas fa-times text-2xl"></i>
+                    </button>
+                </div>
+                <nav class="space-y-4">
+                    <a href="#home" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">Home</a>
+                    <a href="#about" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">About</a>
+                    <a href="#children-safety" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">Children Safety Nets</a>
+                    <a href="#gallery" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">Gallery</a>
+                    <a href="#contact" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section min-h-screen flex items-center justify-center relative">
+        <div class="container mx-auto px-6 text-center text-white relative z-10">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                Premium Children Safety Nets
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
+                Ensure your children's safety with our durable and reliable safety nets
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="tel:+919392702123" class="btn-secondary">
+                    <i class="fas fa-phone"></i>
+                    Call Now: +91 9392702123
+                </a>
+                <a href="https://wa.me/9392702123" class="btn-primary">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp Quote
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+            <div class="w-6 h-10 border-2 border-white rounded-full flex justify-center">
+                <div class="w-1 h-3 bg-white rounded-full mt-2 animate-bounce"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-text">
+            <h2>About Prasanth Safety Nets</h2>
+            <p>
+                At <strong>Prasanth Safety Nets</strong>, we specialize in providing high-quality children safety nets to protect young ones in Visakhapatnam and beyond. Our nets are crafted from durable, UV-resistant materials, ensuring safety and longevity.
+                <br><br>
+                With expert installation and a commitment to customer satisfaction, we offer solutions for homes, schools, and play areas. Choose us for peace of mind and safety solutions that blend seamlessly with your environment.
+            </p>
+            <h3 class="text-xl font-bold text-gray-800 mt-6 mb-4">Connect with Us</h3>
+            <div class="connect-links">
+                <a href="tel:+919392702123">
+                    <i class="fas fa-phone-alt text-blue-600 text-lg"></i>
+                    +91 9392702123
+                </a>
+                <a href="https://wa.me/9392702123" target="_blank">
+                    <i class="fab fa-whatsapp text-green-600 text-lg"></i>
+                    WhatsApp Us
+                </a>
+                <a href="mailto:prasanthchokka3@gmail.com">
+                    <i class="fas fa-envelope text-blue-600 text-lg"></i>
+                    prasanthchokka3@gmail.com
+                </a>
+                <a href="https://www.facebook.com/share/1A7VhwXqC1/" target="_blank">
+                    <i class="fab fa-facebook-f text-blue-600 text-lg"></i>
+                    Facebook
+                </a>
+                <a href="https://www.instagram.com/prasanth_safety_nets?igsh=MXExYWhqNGl1dmV0dA==" target="_blank">
+                    <i class="fab fa-instagram text-pink-600 text-lg"></i>
+                    Instagram
+                </a>
+            </div>
+        </div>
+        <div class="about-image">
+            <img src="children_safety_net.jpg" alt="Premium Children Safety Net">
+        </div>
+    </section>
+
+    <!-- Children Safety Nets Section -->
+    <section id="children-safety" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Our Children Safety Nets</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-green-500 mx-auto mb-8"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Discover our range of safety nets designed to protect children in various environments
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="service-card p-8">
+                    <img src="children_net_standard.jpg" alt="Standard Children Safety Nets" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Standard Children Safety Nets</h3>
+                    <p class="text-gray-600 mb-6">Strong nylon nets for safe play areas and home environments.</p>
+                    <div class="flex justify-between items-center">
+                        <a href="tel:+919392702123" class="btn-secondary text-sm">
+                            <i class="fas fa-phone"></i>
+                            Call Now
+                        </a>
+                        <a href="https://wa.me/9392702123" class="btn-primary text-sm">
+                            <i class="fab fa-whatsapp"></i>
+                            Get Quote
+                        </a>
+                    </div>
+                </div>
+                <div class="service-card p-8">
+                    <img src="children_net_transparent.jpg" alt="Transparent Children Safety Nets" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Transparent Children Safety Nets</h3>
+                    <p class="text-gray-600 mb-6">Clear nets for safety without obstructing visibility.</p>
+                    <div class="flex justify-between items-center">
+                        <a href="tel:+919392702123" class="btn-secondary text-sm">
+                            <i class="fas fa-phone"></i>
+                            Call Now
+                        </a>
+                        <a href="https://wa.me/9392702123" class="btn-primary text-sm">
+                            <i class="fab fa-whatsapp"></i>
+                            Get Quote
+                        </a>
+                    </div>
+                </div>
+                <div class="service-card p-8">
+                    <img src="children_net_custom.jpg" alt="Custom Children Safety Nets" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Custom Children Safety Nets</h3>
+                    <p class="text-gray-600 mb-6">Tailored nets for unique spaces like staircases and play zones.</p>
+                    <div class="flex justify-between items-center">
+                        <a href="tel:+919392702123" class="btn-secondary text-sm">
+                            <i class="fas fa-phone"></i>
+                            Call Now
+                        </a>
+                        <a href="https://wa.me/9392702123" class="btn-primary text-sm">
+                            <i class="fab fa-whatsapp"></i>
+                            Get Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Our Installations</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-green-500 mx-auto mb-8"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    View our premium children safety net installations
+                </p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="gallery-card">
+                    <img src="children_install_1.jpg" alt="Children Safety Net Installation 1">
+                    <div class="p-4">
+                        <p class="text-gray-600 text-sm">Home Play Area Net</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="children_install_2.jpg" alt="Children Safety Net Installation 2">
+                    <div class="p-4">
+                        <p class="text-gray-600 text-sm">Staircase Safety Net</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="children_install_3.jpg" alt="Children Safety Net Installation 3">
+                    <div class="p-4">
+                        <p class="text-gray-600 text-sm">Transparent Play Area Net</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="children_install_4.jpg" alt="Children Safety Net Installation 4">
+                    <div class="p-4">
+                        <p class="text-gray-600 text-sm">Custom Safety Net</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Get in Touch</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-green-500 mx-auto mb-8"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Contact us for premium children safety net solutions in Visakhapatnam
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Send a Message</h3>
+                    <form id="contactForm">
+                        <div class="mb-4">
+                            <label for="contactName" class="block text-gray-700 font-medium mb-2">Name</label>
+                            <input type="text" id="contactName" name="name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="contactEmail" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="contactEmail" name="email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="contactPhone" class="block text-gray-700 font-medium mb-2">Phone</label>
+                            <input type="tel" id="contactPhone" name="phone" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="contactMessage" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="contactMessage" name="message" rows="5" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-white rounded-2xl p-8 shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-phone-alt text-blue-600 text-xl mr-4"></i>
+                                <a href="tel:+919392702123" class="text-gray-600 hover:text-blue-600">+91 9392702123</a>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fab fa-whatsapp text-green-600 text-xl mr-4"></i>
+                                <a href="https://wa.me/9392702123" class="text-gray-600 hover:text-green-600">WhatsApp Us</a>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope text-blue-600 text-xl mr-4"></i>
+                                <a href="mailto:prasanthchokka3@gmail.com" class="text-gray-600 hover:text-blue-600">prasanthchokka3@gmail.com</a>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-blue-600 text-xl mr-4"></i>
+                                <p class="text-gray-600">Visakhapatnam, Andhra Pradesh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/9392702123" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Prasanth Safety Nets</h3>
+                    <p class="text-gray-400">Your trusted provider of premium children safety nets in Visakhapatnam, ensuring safety and peace of mind.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-blue-400">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-blue-400">About</a></li>
+                        <li><a href="#children-safety" class="text-gray-400 hover:text-blue-400">Children Safety Nets</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-blue-400">Gallery</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-blue-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="text-gray-400"><strong>Phone:</strong> <a href="tel:+919392702123" class="text-blue-400 hover:underline">9392702123</a></p>
+                    <p class="text-gray-400"><strong>Email:</strong> <a href="mailto:prasanthchokka3@gmail.com" class="text-blue-400 hover:underline">prasanthchokka3@gmail.com</a></p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://www.facebook.com/share/1A7VhwXqC1/" target="_blank" class="text-gray-400 hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/prasanth_safety_nets?igsh=MXExYWhqNGl1dmV0dA==" target="_blank" class="text-gray-400 hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/9392702123" target="_blank" class="text-gray-400 hover:text-blue-400"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-700 text-center">
+                <p class="text-gray-400">© 2025 Prasanth Safety Nets. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('active');
+        }
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Contact Form Submission
+        document.getElementById('contactForm').addEventListener('submit', (event) => {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const message = `Children Safety Nets Enquiry:\nName: ${formData.get('name')}\nEmail: ${formData.get('email')}\nPhone: ${formData.get('phone')}\nMessage: ${formData.get('message')}`;
+            const whatsappUrl = `https://wa.me/919392702123?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+            alert('Message sent via WhatsApp!');
+            event.target.reset();
+        });
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+                const mobileMenu = document.getElementById('mobileMenu');
+                if (mobileMenu.classList.contains('active')) {
+                    toggleMobileMenu();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
